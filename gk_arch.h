@@ -31,7 +31,7 @@
 #endif
 
 
-#ifdef __MSC__ 
+#ifdef __MSC__
   #include "gk_ms_stdint.h"
   #include "gk_ms_inttypes.h"
   #include "gk_ms_stat.h"
@@ -62,9 +62,8 @@ typedef ptrdiff_t ssize_t;
 #define PTRDIFF_MAX  INT64_MAX
 #endif
 
-/* MSC does not have INFINITY defined */
-#ifndef INFINITY
-#define INFINITY FLT_MAX
-#endif
+// #ifndef INFINITY
+// #define INFINITY FLT_MAX
+// #endif
 
 #endif
